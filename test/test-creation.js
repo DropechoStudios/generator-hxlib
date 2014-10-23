@@ -3,14 +3,14 @@
 var path = require('path');
 var helpers = require('yeoman-generator').test;
 
-describe('haxepunk generator', function () {
+describe('hxlib generator', function () {
   beforeEach(function (done) {
     helpers.testDirectory(path.join(__dirname, 'temp'), function (err) {
       if (err) {
         return done(err);
       }
 
-      this.app = helpers.createGenerator('haxepunk:app', [
+      this.app = helpers.createGenerator('hxlib:app', [
         '../../app'
       ]);
       done();
@@ -19,7 +19,6 @@ describe('haxepunk generator', function () {
 
   it('creates expected files', function (done) {
     var expected = [
-      // add files you expect to exist here.
       '.editorconfig'
     ];
 

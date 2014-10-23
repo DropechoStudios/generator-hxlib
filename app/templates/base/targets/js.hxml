@@ -1,0 +1,6 @@
+--times
+
+-cp src
+-js bin/js/<%= name %>.js
+
+--macro include('<%= name %>')

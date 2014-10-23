@@ -1,0 +1,11 @@
+{
+	"name": "<%= name %>",
+	"url" : "",
+	"license": "MIT",
+	"tags": [],
+	"description": "",
+	"version": "0.0.1",
+	"classPath":"src",
+	"releasenote": "Initial release",
+	"contributors": ["<%= username %>"]
+}

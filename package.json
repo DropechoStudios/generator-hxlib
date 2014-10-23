@@ -4,7 +4,7 @@
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "vantreeseba/generator-hxlib",
+  "repository": "DropechoStudios/generator-hxlib",
   "author": {
     "name": "Ben Van Treese",
     "email": "vantreeseba@gmail.com",

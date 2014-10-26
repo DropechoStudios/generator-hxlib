@@ -1,9 +1,6 @@
 language: node_js
 node_js:
 - '0.10'
-before_install:
-#- currentfolder=${PWD##*/}
-#- if [ "$currentfolder" != 'generator-hxlib' ]; then cd .. && eval "mv $currentfolder generator-hxlib" && cd generator-hxlib; fi
 
 deploy:
   provider: npm
@@ -12,3 +9,4 @@ deploy:
     secure: UfP5w0sWh6tGo+RDfoEfnfQ95CrjzxEllw9+P/fapyUXS8wnnhS3UBGtNfdPpFSPxvMG18KwBKuyK/nJEK0jvGpDOXcO6inlENvP/1zQMDVBe3gZwgm6PylfI2lPdM0QoBS0u+F0XoRmnDcyDHgc4SUm6kGLubzmAA7gZomoY4A=
   on:
     branch: master
+	tags: true

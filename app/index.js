@@ -18,7 +18,7 @@ module.exports = yeoman.generators.Base.extend({
         var prompts = [{
             type: 'input',
             name: 'username',
-            message: 'What is your haxelib/github username?'
+            message: 'What is your haxelib/npm/github username?'
         }, {
             type: 'input',
             name: 'name',
@@ -43,8 +43,8 @@ module.exports = yeoman.generators.Base.extend({
 
         this._templateDirectory('base', '.');
         this.mkdir('src');
-        this.mkdir('src/' + name);
-        this.template('src/_lib.hx', 'src/' + name + '/' + this.libClass + '.hx');
+        this.mkdir('src/' + this.libClass);
+        this.template('src/_lib.hx', 'src/' + this.libClass + '/' + this.libClass + '.hx');
     },
 
     _templateDirectory: function _templateDirectory(source, destination) {

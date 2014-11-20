@@ -1,8 +1,8 @@
-package <%= name %>;
+package <%= libClass %>;
 
 @:expose
 class <%= libClass %> {
-	public function <%= name %>(){
+	public function <%= libClass %>(){
 		trace('hello');
 	}
 }
